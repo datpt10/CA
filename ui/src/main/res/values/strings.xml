@@ -1,0 +1,32 @@
+<resources>
+    <string name="default_notification_channel_id">CA</string>
+
+    <string name="common_error_retry">Oop! An error occurred. Please try again later!</string>
+
+    <string name="account_login">Sign In</string>
+    <string name="account_register">Sign Up</string>
+    <string name="account_forget_password">Forgot password</string>
+    <string name="later">Later</string>
+    <string name="skip">Skip</string>
+    <string name="exit">Exit</string>
+
+    <string name="ui_loading">Loading…</string>
+    <string name="ui_retry">Retry</string>
+    <string name="ui_share">Share</string>
+    <string name="ui_common_error">Error</string>
+    <string name="ui_common_close">Close</string>
+    <string name="ui_common_cancel">Cancel</string>
+    <string name="ui_common_agree">Agree</string>
+    <string name="ui_common_notice">Notice</string>
+    <string name="success">Success</string>
+
+    <string name="action_next">Next</string>
+    <string name="action_continue">Continue</string>
+    <string name="action_previous">Previous</string>
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+    <string name="send">Send</string>
+
+    <string name="rate_now">RATE NOW</string>
+
+</resources>

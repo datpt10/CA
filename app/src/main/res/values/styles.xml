@@ -1,0 +1,104 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="navTextInactive">
+        <item name="lineHeight">13sp</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="navTextActive">
+        <item name="lineHeight">13sp</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="ToolTipDialog" />
+
+    <style name="ToolTipDialog.Text">
+        <item name="android:textColor">?android:colorForeground</item>
+    </style>
+
+
+    <!--    <style name="TooltipDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">-->
+    <!--        <item name="android:windowFrame">@null</item>-->
+    <!--        <item name="android:windowIsFloating">true</item>-->
+    <!--        <item name="android:windowContentOverlay">@null</item>-->
+    <!--        <item name="toolTipDialog.bodyTextStyle">@style/ToolTipDialog.Text.Body</item>-->
+    <!--        <item name="toolTipDialog.backgroundColor">@android:color/white</item>-->
+    <!--        <item name="toolTipDialog.buttonTextColor">?attr/colorPrimary</item>-->
+    <!--        <item name="toolTipDialog.buttonVisibility">2</item>-->
+    <!--        <item name="android:windowMinWidthMajor">100%</item>-->
+    <!--        <item name="android:windowMinWidthMinor">100%</item>-->
+    <!--        <item name="android:backgroundDimEnabled">false</item>-->
+    <!--    </style>-->
+
+    <style name="dialog_transparent_width" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@color/colorPrimaryVariant</item>
+    </style>
+
+    <style name="Widget.Theme.ToolTip.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="Widget.Theme.ToolTip.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+
+    <style name="TooltipDialogTheme.Light" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="toolTipDialog.buttonVisibility">2</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="toolTipDialog.bodyTextStyle">@style/ToolTipDialog.Text.Body</item>
+        <item name="toolTipDialog.backgroundColor">@color/white</item>
+        <item name="toolTipDialog.buttonTextColor">@color/accent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">@bool/use_light_status</item>
+        <item name="android:statusBarColor">@color/statusBarColor</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">
+            @bool/use_light_navigation
+        </item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="TooltipDialogTheme.Dark" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="toolTipDialog.buttonVisibility">2</item>
+        <!--        <item name="android:windowMinWidthMajor">100%</item>-->
+        <!--        <item name="android:windowMinWidthMinor">100%</item>-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="toolTipDialog.bodyTextStyle">@style/ToolTipDialog.Text.Body.Dark</item>
+        <item name="toolTipDialog.backgroundColor">@color/gray_800</item>
+        <item name="toolTipDialog.buttonTextColor">@color/accent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">@bool/use_light_status</item>
+        <item name="android:statusBarColor">@color/statusBarColor</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">
+            @bool/use_light_navigation
+        </item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="ToolTipDialog.Text.Body">
+        <item name="android:textSize">17sp</item>
+        <!--        <item name="android:lineSpacingExtra">4sp</item>-->
+    </style>
+
+    <style name="ToolTipDialog.Text.Body.Dark">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

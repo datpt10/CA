@@ -1,0 +1,4 @@
+<resources>
+    <string name="bottom_home" translatable="false">Trang chủ</string>
+    <string name="bottom_sotp" translatable="false">SOTP</string>
+</resources>

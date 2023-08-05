@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login_nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="vn.base.mvvm.screen.login.presentation.LoginFragment"
+        android:label="LoginFragment">
+
+        <action
+            android:id="@+id/action_open_dialogSmartOTP"
+            app:destination="@id/dialogSmartOTP"
+            app:launchSingleTop="true" />
+
+        <action
+            android:id="@+id/action_open_dialogUserManual"
+            app:destination="@id/dialogUserManual"
+            app:launchSingleTop="true" />
+
+        <action
+            android:id="@+id/action_open_dialogLoginFail"
+            app:destination="@id/dialogLoginFail"
+            app:launchSingleTop="true" />
+
+        <action
+            android:id="@+id/action_open_dialogLockAccount"
+            app:destination="@id/dialogLoginLockAccount"
+            app:launchSingleTop="true" />
+
+        <action
+            android:id="@+id/action_open_dialogComingSoon"
+            app:destination="@id/dialogLoginComingSoon"
+            app:launchSingleTop="true" />
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/dialogUserManual"
+        android:name="vn.base.mvvm.screen.login.presentation.dialog.DialogUserManual"
+        android:label="DialogUserManual" />
+
+    <dialog
+        android:id="@+id/dialogSmartOTP"
+        android:name="vn.base.mvvm.screen.login.presentation.dialog.DialogSmartOTP"
+        android:label="DialogSmartOTP" />
+
+    <dialog
+        android:id="@+id/dialogLoginFail"
+        android:name="vn.base.mvvm.screen.login.presentation.dialog.DialogLoginFail"
+        android:label="DialogLoginFail" />
+
+    <dialog
+        android:id="@+id/dialogLoginLockAccount"
+        android:name="vn.base.mvvm.screen.login.presentation.dialog.DialogLoginLockAccount"
+        android:label="DialogLoginLockAccount" />
+
+    <dialog
+        android:id="@+id/dialogLoginComingSoon"
+        android:name="vn.base.mvvm.screen.login.presentation.dialog.DialogComingSoon"
+        android:label="DialogComingSoon" />
+</navigation>

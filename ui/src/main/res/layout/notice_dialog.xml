@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog"
+    android:padding="0dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/textView_title"
+        style="@style/MaterialDialog.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/textView_message"
+        style="@style/MaterialDialog.Message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_title"
+        tools:text="Message" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_message"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/margin_16dp"
+        android:weightSum="1.0">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_negative"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:lines="1"
+            android:background="@color/Transparent"
+            android:ellipsize="end"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:fontFamily="@font/bold"
+            app:layout_constraintEnd_toStartOf="@+id/button_positive"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_max="160dp"
+            tools:text="Negative" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_positive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:layout_marginBottom="@dimen/margin_16dp"
+            android:lines="1"
+            android:ellipsize="end"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/button_negative"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_max="160dp"
+            tools:text="Positive" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
